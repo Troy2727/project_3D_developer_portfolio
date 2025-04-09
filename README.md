@@ -1,6 +1,7 @@
 <div align="center">
   <br />
-   
+  <img src="./src/assets/school/Desktop PC.png" alt="3D Developer Portfolio Banner" width="80%" />
+  <br />
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
     <img src="https://img.shields.io/badge/-Three_JS-black?style=for-the-badge&logoColor=white&logo=threedotjs&color=000000" alt="three.js" />
@@ -9,7 +10,7 @@
 
   <h3 align="center">A 3D Developer Portfolio</h3>
 
-  
+
 
 ## 📋 <a name="table">Table of Contents</a>
 
@@ -56,7 +57,7 @@ By developing this project, you will gain hands-on experience in crafting immers
 
 👉 **Responsive Design**: Ensures optimal display and functionality across all devices.
 
-and many more, including code architecture and reusability 
+and many more, including code architecture and reusability
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
