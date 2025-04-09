@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <img src="./src/assets/school/Desktop PC.png" alt="3D Developer Portfolio Banner" width="80%" />
+  <img src="./src/assets/school/Desktop PC.png" alt="3D Developer Portfolio Banner" width="90%" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" />
   <br />
   <div>
     <img src="https://img.shields.io/badge/-React_JS-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react.js" />
