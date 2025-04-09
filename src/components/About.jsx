@@ -47,8 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-      "As a current student in MIT xPRO Professional Certificate in Coding: Full Stack Development with MERN, I'm a software developer actively learning TypeScript and JavaScript, as well as frameworks like React, Node.js, and Three.js. I'm a quick learner and collaborate closely with clients to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to life!"
-
+      As a certified graduate of MIT xPRO's Professional Certificate in Coding: Full Stack Development with MERN, I'm a dedicated software developer with hands-on experience in JavaScript, TypeScript, React, Node.js, and Three.js. I'm passionate about building scalable, efficient, and user-friendly solutions that solve real-world problems. I'm also a fast learner who thrives in collaborative environments — working closely with clients and teams to turn ideas into powerful web experiences. Let's bring your vision to life!
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

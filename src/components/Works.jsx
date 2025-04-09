@@ -80,7 +80,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          As a current student in MIT xPRO's Professional Certificate in Coding: Full Stack Development with MERN, I am honing my skills through real-world examples of my work. Each project is briefly described and includes links to the code repository and showcasing my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          As a graduate of MIT xPRO's Professional Certificate in Coding: Full Stack Development with MERN, I continue to hone my skills by building real-world projects. Each project is briefly described and includes links to the code repository, demonstrating my ability to solve complex problems, work with diverse technologies, and manage projects effectively.
         </motion.p>
       </div>
 
