@@ -21,7 +21,7 @@ import {
   mitxpro3,
   mitxpro4,
   brainwaveAI,
-  jobit,
+  aiMockInterview,
   tripguide,
   threejs,
 } from "../assets";
@@ -200,15 +200,15 @@ const projects = [
     live_site_link: "https://brainwave-ai-gamma.vercel.app/",
     tags: [
       {
-        name: "vite",
+        name: "VITE",
         color: "blue-text-gradient",
       },
       {
-        name: "react",
+        name: "REACT.JS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "TAILWIND CSS",
         color: "pink-text-gradient",
       },
     ],
@@ -216,47 +216,52 @@ const projects = [
     source_code_link: "https://github.com/Troy2727/brainwave-AI.git",
   },
   {
-    name: "Job IT",
+    name: "AI Mock Interview",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    live_site_link: "",
+      "AI-powered mock interview platform built with Next.js, Vapi, Tailwind CSS, and Firebase. Helps job seekers prepare for technical and behavioral interviews with real-time feedback, customizable interview scenarios, and AI-generated questions based on job descriptions and industry trends.",
+    live_site_link: "https://ai-mock-interview-gamma-six.vercel.app/",
     tags: [
       {
-        name: "react",
+        name: "NEXT.JS",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "VAPI",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "TAILWIND CSS",
         color: "pink-text-gradient",
       },
+      {
+        name: "FIREBASE",
+        color: "blue-text-gradient",
+      },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: aiMockInterview,
+    source_code_link: "https://github.com/Troy2727/ai_mock_interview.git",
   },
   {
     name: "Trip Guide",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    live_site_link: "https://trip-guide-travel.vercel.app/",
     tags: [
       {
-        name: "nextjs",
+        name: "NEXT.JS",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "SUPABASE",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/yourusername/trip-guide",
   },
 ];
 
