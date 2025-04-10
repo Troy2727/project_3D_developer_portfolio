@@ -29,7 +29,7 @@ import mitxpro3 from "./school/mitxpro.jpg";
 import mitxpro4 from "./school/mitxpro.jpg";
 
 import brainwaveAI from "./brainwave AI.jpg";
-import jobit from "./jobit.png";
+import aiMockInterview from "./tech/aiMockInterview.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -62,6 +62,6 @@ export {
   mitxpro3,
   mitxpro4,
   brainwaveAI,
-  jobit,
+  aiMockInterview,
   tripguide,
 };
