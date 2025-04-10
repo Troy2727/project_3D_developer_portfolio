@@ -126,6 +126,22 @@
   transform: translateZ(0);
 }
 
+/* SVG styles for technology icons */
+object.fill-white svg {
+  fill: white;
+  stroke: white;
+}
+
+object.fill-white svg path {
+  fill: white;
+  stroke: white;
+}
+
+/* Specific styles for Three.js logo */
+[alt="Three JS"] {
+  filter: brightness(1.5) contrast(1.2);
+}
+
 @keyframes mulShdSpin {
   0%,
   100% {

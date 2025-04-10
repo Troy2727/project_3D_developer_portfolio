@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState, useMemo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -7,18 +7,53 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  return (
-    <mesh>
+  // Optimize the model
+  useEffect(() => {
+    if (computer && computer.scene) {
+      computer.scene.traverse((child) => {
+        if (child.isMesh) {
+          // Optimize meshes
+          child.castShadow = false;
+          child.receiveShadow = false;
+
+          // Simplify geometry if possible
+          if (child.geometry) {
+            child.geometry.dispose();
+          }
+        }
+      });
+    }
+
+    // Clean up
+    return () => {
+      if (computer) {
+        computer.scene.traverse((child) => {
+          if (child.isMesh && child.geometry) {
+            child.geometry.dispose();
+          }
+        });
+      }
+    };
+  }, [computer]);
+
+  // Memoize lights to prevent unnecessary re-renders
+  const lights = useMemo(() => (
+    <>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
-        intensity={1}
-        castShadow
-        shadow-mapSize={1024}
+        intensity={0.8} // Reduced intensity
+        castShadow={false}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={0.8} /> {/* Reduced intensity */}
+    </>
+  ), []);
+
+  return (
+    <mesh>
+      {lights}
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
@@ -56,16 +91,21 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop='demand'
-      shadows
-      dpr={[1, 2]}
+      shadows={false} // Disable shadows for better performance
+      dpr={isMobile ? 1 : [1, 1.5]} // Lower resolution, especially on mobile
       camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
+      gl={{
+        preserveDrawingBuffer: true,
+        powerPreference: "high-performance",
+        antialias: !isMobile, // Disable antialiasing on mobile
+      }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          enableDamping={false} // Disable damping for better performance
         />
         <Computers isMobile={isMobile} />
       </Suspense>

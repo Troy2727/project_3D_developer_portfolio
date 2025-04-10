@@ -2,24 +2,24 @@
 <svg width="256" height="256" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
   <!-- Main triangle outline -->
   <path d="M50,10 L10,80 L90,80 Z" fill="none" stroke="#ffffff" stroke-width="2" />
-
+  
   <!-- Inner triangular grid -->
   <!-- Horizontal line -->
   <path d="M30,45 L70,45" stroke="#ffffff" stroke-width="2" />
-
+  
   <!-- Left diagonal lines -->
   <path d="M50,10 L30,45" stroke="#ffffff" stroke-width="2" />
   <path d="M30,45 L10,80" stroke="#ffffff" stroke-width="2" />
   <path d="M50,10 L10,80" stroke="#ffffff" stroke-width="2" />
-
+  
   <!-- Right diagonal lines -->
   <path d="M50,10 L70,45" stroke="#ffffff" stroke-width="2" />
   <path d="M70,45 L90,80" stroke="#ffffff" stroke-width="2" />
   <path d="M50,10 L90,80" stroke="#ffffff" stroke-width="2" />
-
+  
   <!-- Middle vertical line -->
   <path d="M50,10 L50,80" stroke="#ffffff" stroke-width="2" />
-
+  
   <!-- Additional grid lines -->
   <path d="M30,45 L50,80" stroke="#ffffff" stroke-width="2" />
   <path d="M70,45 L50,80" stroke="#ffffff" stroke-width="2" />

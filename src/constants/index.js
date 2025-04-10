@@ -15,6 +15,7 @@ import {
   git,
   sqlite,
   docker,
+  python,
   mitxpro1,
   mitxpro2,
   mitxpro3,
@@ -75,6 +76,10 @@ const technologies = [
   {
     name: "TypeScript",
     icon: typescript,
+  },
+  {
+    name: "Python",
+    icon: python,
   },
   {
     name: "React JS",
