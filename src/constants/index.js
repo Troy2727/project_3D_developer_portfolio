@@ -20,7 +20,7 @@ import {
   mitxpro2,
   mitxpro3,
   mitxpro4,
-  carrent,
+  brainwaveAI,
   jobit,
   tripguide,
   threejs,
@@ -194,16 +194,17 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Brainwave AI",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Modern UI/UX website, developed using React.js and Tailwind CSS, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
+    live_site_link: "https://brainwave-ai-gamma.vercel.app/",
     tags: [
       {
-        name: "react",
+        name: "vite",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "react",
         color: "green-text-gradient",
       },
       {
@@ -211,13 +212,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: brainwaveAI,
+    source_code_link: "https://github.com/Troy2727/brainwave-AI.git",
   },
   {
     name: "Job IT",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+    live_site_link: "",
     tags: [
       {
         name: "react",

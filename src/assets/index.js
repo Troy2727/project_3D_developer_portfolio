@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import externalLink from "./external-link.svg";
+import vercelLogo from "./vercel-logo.svg";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import sqlite from "./tech/sqlite-small.png";
@@ -26,7 +28,7 @@ import mitxpro2 from "./school/mitxpro.jpg";
 import mitxpro3 from "./school/mitxpro.jpg";
 import mitxpro4 from "./school/mitxpro.jpg";
 
-import carrent from "./carrent.png";
+import brainwaveAI from "./brainwave AI.jpg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -39,6 +41,8 @@ export {
   github,
   menu,
   close,
+  externalLink,
+  vercelLogo,
   css,
   docker,
   sqlite,
@@ -57,7 +61,7 @@ export {
   mitxpro2,
   mitxpro3,
   mitxpro4,
-  carrent,
+  brainwaveAI,
   jobit,
   tripguide,
 };
